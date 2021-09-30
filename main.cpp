@@ -11,7 +11,7 @@ int main()
   {
     board();
     player = (player % 2) ? 1 : 2;
-    cout << "player" << player << ",enter a number: ";
+    cout << "player" << player << ",Enter a Number: ";
     cin >> choice;
     mark = (player == 1) ? 'X' : 'O';
     if(choice == 1 && square[1] == '1') {
@@ -43,7 +43,7 @@ int main()
     }
     else
     {
-      cout << "invalid move";
+      cout << "Invalid Move";
 
       player--;
       cin.ignore();
@@ -55,9 +55,9 @@ int main()
   } while (i == -1);
   board();
   if (i == 1)
-    cout << "==>\aplayer" << --player << "win";
+    cout << "==>\aPlayer" << --player << "Win";
   else
-    cout << "==>\agame draw";
+    cout << "==>\aGame Draw";
 
   cin.ignore();
   cin.get();
@@ -71,9 +71,6 @@ int checkwin()
 
     return 1;
   else if (square[7] == square[8] && square[8] == square[9])
-
-    return 1;
-  else if (square[1] == square[4] && square[4] == square[7])
 
     return 1;
   else if (square[2] == square[5] && square[5] == square[8])
